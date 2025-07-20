@@ -1,0 +1,46 @@
+# CypherFramework Configuration
+framework:
+  name: "CypherFramework"
+  version: "1.0.0"
+  author: "Authorized Security Team"
+  
+database:
+  type: "sqlite"
+  path: "database/cypher.db"
+  auto_update_cve: true
+  update_interval: 86400  # 24 hours
+
+modules:
+  auto_load: true
+  paths:
+    - "modules/auxiliary"
+    - "modules/exploits" 
+    - "modules/payloads"
+    - "modules/encoders"
+    - "modules/post_exploit"
+
+logging:
+  level: "INFO"
+  file: "logs/cypher.log"
+  max_size: "10MB"
+  backup_count: 5
+
+web:
+  host: "127.0.0.1"
+  port: 8000
+  cors_origins: ["http://localhost:3000"]
+
+cli:
+  prompt: "cypher"
+  history_file: ".cypher_history"
+  auto_complete: true
+
+security:
+  require_auth: false
+  session_timeout: 3600
+  max_sessions: 10
+  
+ai_assistant:
+  enabled: true
+  model: "local"  # or "openai"
+  confidence_threshold: 0.7
