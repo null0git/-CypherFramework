@@ -1,5 +1,5 @@
-# CypherFramework
-![status](https://img.shields.io/badge/status-in--development-orange)
+# CypherFramework ![status](https://img.shields.io/badge/status-in--development-orange)
+
 **Professional Ethical Hacking & Penetration Testing Framework**
 
 ⚠️ **IMPORTANT DISCLAIMER**: This framework is designed exclusively for authorized penetration testing and educational purposes. Unauthorized use against systems you do not own or lack explicit permission to test is illegal and unethical.
